@@ -39,7 +39,7 @@ class IndexController extends Controller
 
         if ($validator->fails()) {
             return response()->json([
-                'message' => 'Error de validación',
+                'message' => 'Error de validacion',
                 'errors' => $validator->errors()
             ], 400); 
         }
