@@ -71,6 +71,6 @@ class IndexController extends Controller
 
         curl_exec($ch);
         curl_close($ch);
-        return redirect('/');
+        return redirect()->to('/');
     }
 }
